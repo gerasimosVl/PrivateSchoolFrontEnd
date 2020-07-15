@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a course</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <section id="overlay">
+    <h2>Add a course</h2>
+    <hr>
+    
+    <form id="form" action="" method="GET">
+    <div>
+    <label for="course-title">Course title:</label>
+    <input id="course" type="text" name="course-title" required>
+    </div>
+    <br>
+    <div>
+    <label for="course-stream">Course stream:</label>
+    <select id="stream" name="course-stream" required>
+        <option value="PleaseSelect">Please Select</option>
+        <option value="Java">Java</option>
+        <option value="C#">C#</option>
+    </select>
+    </div>
+    <br>
+
+    <div>
+    <label for="course-type">Course type:</label>
+    <select id="type" name="course-type" required>
+        <option value="PleaseSelect">Please Select</option>
+        <option value="Full-time">Full time</option>
+        <option value="Part-time">Part time</option>
+    </select>
+    </div>
+    <br>
+
+    <div>
+    <label for="course-start-date">Start date:</label>
+    <input type="date" name="course-start-date" required>
+    </div>
+    <br>
+    <div>
+    <label for="course-end-date">End date:</label>
+    <input type="date" name="course-end-date" required>
+    </div>
+    <br>
+
+    <form>
+        <button type="submit" id="btn" value="click">Add</button>
+    </form>
+
+
+    </form>
+    <br>
+    <hr>
+
+
+    <form action="app.html">
+        <button>Back to main menu</button>
+    </form>
+    <br>
+    <br>
+    <form action="index.html">
+        <button>Back to home</button>
+    </form>
+    
+    </section>
+
+
+
+</body>
+</html>

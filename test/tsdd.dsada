@@ -1,0 +1,22 @@
+function validateStudent() {
+    var firstName = document.getElementById("student-fname").value;
+    var lastName = document.getElementById("student-lname").value;
+
+
+    if (firstName === "") {
+        alert("Please enter Student's First Name.");
+        return false;
+    } else if (lastName === "") {
+        alert("Please enter Student's Last Name.");
+        return false;
+    
+    } else if (!(isNaN(firstName))) {
+        alert("Numbers are not allowed in the field 'First Name'.");
+        return false;
+    } else if (!(isNaN(lastName))) {
+        alert("Numbers are not allowed in the field 'Lat Name'.");
+        return false;
+    } else {
+        return true;
+    }
+};

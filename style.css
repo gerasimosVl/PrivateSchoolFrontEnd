@@ -1,0 +1,255 @@
+body {
+  background-color: rgb(255, 199, 64);
+  font-family: "Open Sans", Arial;
+}
+
+#main {
+  background-color: rgba(255,255,255,0.8);
+  text-align: center;
+  height: 80vh;
+  border-radius: 15px;
+  margin: 2% 10%;
+  overflow: auto;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#overlay {
+  background-color: rgba(255,255,255,0.8);
+  text-align: center;
+  height: 80vh;
+  border-radius: 15px;
+  margin: 2% 10%;
+  overflow: auto;  
+  line-height: 40px;
+  padding: 0 3%;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+form {
+  display: inline;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  text-align: center;
+}
+
+select {
+  border: 1px solid #555;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+input[type="text"], input[type="number"], input[type="date"], input[type="submit"], [type=text]:focus {
+  min-height: 15px;
+  border-radius: 5px;
+  /*border:1px solid #cccccc;*/
+  border: 1px solid #555;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+button {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  transition-duration: 0.4s;
+}
+
+button :hover {
+  background-color: #2e6da4;
+}
+
+
+
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+figure {
+  margin-bottom: 30px;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+div > h1 {
+  font-size: 1.8rem;
+}
+
+nav > p {
+  cursor: pointer;
+}
+.pill-black, .pill-white {
+  border: 0.5px solid;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.pill-black {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+}
+
+/* Customizations of Bootstrap classes */
+
+header .row {
+  display: flex;
+  align-items: center;
+}
+
+.top-menu .current a
+{
+  color: #2e6da4 !important;
+}
+
+.col-sm-4 p {
+  margin: 25px 20px 15px;
+  min-width: 60px;
+  padding: 1px;
+}
+
+section.container .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  height: 350px;
+  background-image: url("./img/backgroung-coding3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  height: 350px;
+  background-image: url("./img/privateschool2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    height: 350px;
+    background-image: url("./img/privateschool2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.jumbotron h2 {
+  background-color: #FFFFFF;
+  display: inline-block;
+  color: #F06529;
+  font-weight: 700;
+  padding: 10px 35px;
+  border-radius: 5px;
+}
+
+.jumbotron h3 {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.btn-primary {
+  color: #2e6da4;
+  background-color: #FFFFFF;
+}
+
+.col-sm-1 img {
+  min-width: 32px;
+  min-height: 33px;
+}
+
+/* contact form  */
+
+.wrapper{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 350px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+}
+
+.wrapper h2{
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+
+.wrapper .input_field{
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 10px;
+}
+
+.wrapper textarea{
+  resize: none;
+  height: 80px;
+}
+
+.wrapper .btn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #fece0c;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
